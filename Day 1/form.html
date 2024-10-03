@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1>Buat Account Baru!</h1>
+    <h2>Sign Up Forum</h2>
+
+    <form action="">
+        <p>First Name : </p>
+        <input type="text" name="Fname" id="fname" placeholder="First Name">
+        
+        <p>Last Name : </p>
+        <input type="text" name="Lname" id="lname" placeholder="Last Name">
+        
+        <p>Gender : </p>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label><br>
+        
+        <input type="radio" name="gender" id="female" value="Female">
+        <label for="female">Female</label><br>
+        
+        <input type="radio" name="gender" id="other" value="Other">
+        <label for="other">Other</label><br>
+
+        <p>Nationality</p>
+        <select name="nationality" id="nationality">
+            <option value="Indonesia">Indonesia</option>
+            <option value="Malaysia">Malaysia</option>
+            <option value="Thailand">Thailand</option>
+            <option value="Brunei Darussalam">Brunei Darussalam</option>
+        </select>
+
+        <p>Language Spoken : </p>
+        <input type="checkbox" name="LSpoken1" id="lspoken1" value="Indonesian">
+        <label for="LSpoken1">Indonesian</label><br>
+        <input type="checkbox" name="LSpoken2" id="lspoken2" value="English">
+        <label for="LSpoken1">English</label><br>
+        <input type="checkbox" name="LSpoken3" id="lspoken3" value="Other">
+        <label for="LSpoken1">Other</label><br>
+
+        <p>Bio : </p>
+        <textarea name="Bio" id="bio" placeholder="Your Bio Here..."></textarea><br>
+        
+        <a href="welcome.html"><input type="button" value="sign up"></a>
+    </form>
+</body>
+</html>
