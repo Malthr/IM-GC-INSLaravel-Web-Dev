@@ -1,0 +1,3 @@
+Motivasi saya mengikuti Bootcamp Laravel Web Dev berawal dari kesadaran bahwa saya tidak memiliki pengetahuan sama sekali tentang Web Dev. Hal tersebut membuat saya merasa tertinggal dari teman-teman saya yang lain. Dengan pengetahuan yang sedikit tentang programming dan modal nekat, saya memberanikan diri untuk mengikuti Bootcamp Laravel Web Dev. 
+
+Harapan saya setelah mengikuti Bootcamp ini adalah saya dapat membuat web sederhana dengan menggunakan framework Laravel. Setidaknya saya dapat memahami bagian-bagian dasar dan bagian yang penting dari Laravel. Hal tersebut dapat membantu saya dalam mempelajari Laravel secara otodidak kedepannya. 
