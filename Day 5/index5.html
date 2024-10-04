@@ -54,9 +54,20 @@
             ["0003", "Winona", "Ambon", "25/12/1965", "Memasak"],
             ["0004", "Bintang Senjaya", "Martapura", "6/4/1970", "Berkebun"]
         ]
-        // Code kamu di sini, lakukan looping terhadap input di atas 
-        var jawaban1 = ""
-        document.getElementById("jawaban1").innerHTML = jawaban1
+        // Code kamu di sini, lakukan looping terhadap input di atas
+        function dataHandling(data){
+		var result = "";
+		for (var i = 0; i < data.length; i++){
+			result += "Nomor ID: " + data[i][0] + "<br>";
+			result += "Nama Lengkap: " + data[i][1] + "<br>";
+			result += "TTL: " + data[i][2] + " " + data[i][3] + "<br>";
+			result += "Hobi: " + data[i][4] + "<br><br>";
+		}
+		return result;
+	}
+
+	var jawaban1 = dataHandling(input);
+        document.getElementById("jawaban1").innerHTML = jawaban1;
     </script>
 </body>
 </html>
