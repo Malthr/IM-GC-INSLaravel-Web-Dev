@@ -1,0 +1,64 @@
+1. Buat Database
+
+create database myshop;
+
+
+2. Buat Tabel dalam Database
+
+create table users (id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+name varchar (255),
+email varchar (255),
+password varchar (255));
+
+create table categories (id int NOT NULL PRIMARY KEY AUTO_INCREMENT, name varchar(255));
+
+create table items (id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
+name varchar(255),
+description varchar (255),
+price int,
+stock int,
+category_id int FOREIGN KEY REFERENCES categories(id));
+
+
+3. Memasukkan Data dalam Tabel
+
+INSERT INTO users (name, email)
+VALUES 
+('John Doe','john@doe.com'),
+('Jane Doe','jane@doe.com');
+
+INSERT INTO categories (name);
+VALUES ('gadget'), ('clothe'), ('men'), ('women'), ('branded');
+
+INSERT INTO items (name, description)
+VALUES
+('Sumsang B50','Hape Keren dari Merek Sumsang'),
+('Uniklooh','Baju Keren dari Brand Ternama'),
+('IMHO Watch','Jam Tangan Anak yang Jujur Banget');
+
+
+4. Mengambil Data dari Database
+   a. Mengambil data users kecuali password
+      
+      SELECT id, name, email FROM users;
+
+
+   b. Mengambil data items dengan filter
+
+      SELECT * FROM items WHERE price = 1000000;
+
+      SELECT * FROM items WHERE name LIKE 'sang';
+
+
+   c. Menampilkan Data items JOIN dengan KATEGORI;
+      SELECT items.name AS item_name, categories.name AS category
+      FROM items
+      INNER JOIN categories ON items.category_id = categories.id;
+      
+
+
+5. Mengubah Data dari Database
+
+   UPDATE items 
+   SET price = 2500000
+   WHERE name = 'sumsang b50';
